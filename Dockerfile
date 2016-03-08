@@ -13,7 +13,10 @@ RUN mkdir -p /opt/leshan-server-demo && \
         https://hudson.eclipse.org/leshan/job/leshan/lastSuccessfulBuild/artifact/leshan-server-demo.jar && \
     mkdir -p /opt/leshan-bsserver-demo && \
     curl -o /opt/leshan-bsserver-demo/leshan-bsserver-demo.jar \
-        https://hudson.eclipse.org/leshan/job/leshan/lastSuccessfulBuild/artifact/leshan-bsserver-demo.jar
+        https://hudson.eclipse.org/leshan/job/leshan/lastSuccessfulBuild/artifact/leshan-bsserver-demo.jar && \
+    mkdir -p /opt/leshan-client-demo && \
+    curl -o /opt/leshan-client-demo/leshan-client-demo.jar \
+        https://hudson.eclipse.org/leshan/job/leshan/lastSuccessfulBuild/artifact/leshan-client-demo.jar
 RUN useradd -r -d /opt/leshan-server-demo -s /sbin/nologin -U leshan
 
 RUN touch /opt/leshan-server-demo/Californium.properties && \
