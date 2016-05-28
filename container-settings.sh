@@ -6,5 +6,5 @@ if [ x${MACHINE_TYPE} = xarmv7l ]; then
   export LESHAN_CONTAINER_TAG=gebart/leshan:armhf
 else
   # default to x86
-  export LESHAN_CONTAINER_TAG=gebart/leshan:latest
+  export LESHAN_CONTAINER_TAG=gebart/leshan:x86
 fi
